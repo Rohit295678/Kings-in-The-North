@@ -1,0 +1,9 @@
+.cardTitle{
+    text-align:center;
+    font-size:20px;
+    color:rgb(218, 130, 130)
+}
+.cardContainer{
+    width:100%;
+    padding:10px;
+}

@@ -1,0 +1,22 @@
+.container127{
+    margin-top:8%;
+   
+}
+.inner{
+   overflow: hidden;
+    cursor: pointer;
+    
+
+}
+.inner img{
+    
+transition: transform .2s;
+transition:all 1.5s erase;
+
+}
+.inner img:hover{
+    transform:scale(1.5);
+}
+.animate{
+    border-radius:50px;
+}

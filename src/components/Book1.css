@@ -1,0 +1,142 @@
+.App {
+  text-align: center;
+}
+.body12
+{
+    margin-top: 70px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.container12{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup
+{
+    width: 400px;
+    background: #7d9ddb;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+.Invoice-Box{
+    max-width: 800px;
+    background: #eee;
+    margin:auto;
+    padding: 50px;
+    border: 1px solid#eee;
+    box-shadow: 0 0 10px rgba(0,0,0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Arial, sans-serif;
+}
+.Invoice-Box table{
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+.Invoice-Box table td{
+    padding: 5px;
+    vertical-align: top;
+}
+
+.Invoice-Box table tr td:nth-child(2)
+{
+    text-align: right;
+}
+.Invoice-Box table tr.top table td
+{
+    padding-bottom: 20px;
+}
+.Invoice-Box table tr.Information table td
+{
+    padding-bottom: 40px;
+}
+.Invoice-Box table tr.heading td{
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+.Invoice-Box table tr.details td
+{
+    padding-bottom: 20px;
+}
+.Invoice-Box table tr.item td
+{
+    border-bottom: 1px solid #eee;
+}
+.Invoice-Box button{
+    padding: 10px 60px;
+    background: #598cf1;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    border: 0;
+    outline: none;
+    font-size: 22px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    float: right;
+    margin-top:-3px;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .Invoice-Box table tr.top table td
+    {
+        width: 100%;
+        display: block;
+        text-align: center;
+       
+    }
+    .Invoice-Box table tr.Information table td{
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
